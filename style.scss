@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+.button{
+  width: 300px;
+  height: 60px;
+  border-radius: 30px;
+  background: orange;
+  border: none;
+  color: #ffffff;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 20px;
+  animation: bg-color 10s infinite;
+}
+
+.box {
+  display: block;
+}
+.orange {
+  display: block;
+  background-color: orange;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  filter: url("#myfilter");
+  z-index: 1;
+}
+.drop{
+  display: block;
+  background-color: orange;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  z-index: -1;
+
+  transform: translate(-50%, 0%);
+  filter: url("#myfilter");
+}
